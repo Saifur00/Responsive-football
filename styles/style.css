@@ -108,15 +108,44 @@ Banner Section CSS styles
 main section css style
 ---------------------  */
 
+.player__cards {
+  width: 60%;
+  margin: auto;
+  /* padding: 0px 250px; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  column-gap: 30px;
+  row-gap: 27px;
+  margin-bottom: 165px;
+}
+
 .player_card {
   width: 330px;
-  height: 474px;
+  /* height: 474px; */
   background-color: #ffffff;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-  display: flex;
-  flex-direction: column;
+  padding: 15px;
 }
+
 .player_card .thumbnail img {
   width: 300px;
   height: 256px;
+  margin-bottom: 16px;
+}
+
+.player_info .player-name {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 28px;
+  line-height: 40px;
+  color: #18191f;
+  margin-bottom: 10px;
+}
+
+.player_info .player--bio {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #6c6c6c;
 }
