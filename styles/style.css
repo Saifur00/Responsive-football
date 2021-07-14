@@ -1,0 +1,122 @@
+/* -------------
+Fonts CSS styles
+---------------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* -----------------
+Base Css Styles
+-------------------- */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+header {
+  background-color: #2d25a0;
+  height: 677px;
+  margin-bottom: 70px;
+}
+
+.btn-style {
+  width: 123px;
+  height: 44px;
+  padding: 10px 24px;
+  background-color: #e02c6d;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* -----------------
+Header Section CSS styles 
+-------------------- */
+
+.navbar {
+  height: 44px;
+  padding: 42px 120px;
+}
+
+.nav_menu {
+  margin: 0;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-items {
+  list-style: none;
+  margin-left: 36px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.nav-items:last-child {
+  margin-left: auto;
+  margin-right: 60px;
+}
+
+.gap_between {
+  margin-right: 8px;
+}
+
+/* -------------------------
+Banner Section CSS styles
+---------------------------*/
+
+.banner__contents {
+  display: flex;
+  justify-content: center;
+}
+
+.contents {
+  width: 50%;
+  padding: 121px 102px 240px 156px;
+}
+
+.contents .tournament_header {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 80px;
+  margin-bottom: 27px;
+}
+
+.contents a {
+  font-family: "Poppins", sans-serif;
+}
+
+.arrow_style {
+  margin-left: 8px;
+}
+
+.banner_img {
+  width: 50%;
+  padding: 49px 225px 114px 84px;
+}
+
+.banner_img img {
+  width: 556.01px;
+  height: 438px;
+}
+
+/*------------
+main section css style
+---------------------  */
+
+.player_card {
+  width: 330px;
+  height: 474px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+.player_card .thumbnail img {
+  width: 300px;
+  height: 256px;
+}
