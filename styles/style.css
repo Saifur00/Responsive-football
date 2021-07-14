@@ -15,7 +15,10 @@ Base Css Styles
 
 header {
   background-color: #2d25a0;
-  height: 677px;
+}
+
+.banner__contents {
+  background-color: #2d25a0;
   margin-bottom: 70px;
 }
 
@@ -93,6 +96,10 @@ Banner Section CSS styles
   margin-bottom: 27px;
 }
 
+.tournament_header span {
+  display: block;
+  word-wrap: break-word;
+}
 .contents a {
   font-family: "Poppins", sans-serif;
 }
@@ -141,7 +148,6 @@ Player Card section CSs Style
 .player__cards {
   width: 60%;
   margin: auto;
-  /* padding: 0px 250px; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
@@ -152,7 +158,6 @@ Player Card section CSs Style
 
 .player_card {
   width: 330px;
-  /* height: 474px; */
   background-color: #ffffff;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
   padding: 15px;
@@ -273,7 +278,6 @@ Goat Debate Section
   right: 200px;
   top: 180px;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-  /* display: none; */
 }
 
 .stats_card2 {
@@ -285,7 +289,6 @@ Goat Debate Section
   left: 200px;
   top: 180px;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-  /* display: none; */
 }
 
 .stats_card h2,
@@ -361,9 +364,6 @@ footer section css
   align-items: center;
 }
 .footer_section img {
-  /* display: block;
-  width: 50%;
-  margin: 0 auto; */
   width: 483.87px;
   height: 110px;
   margin-bottom: 50px;
@@ -393,40 +393,58 @@ footer section css
 mobile screen responsive css
 ------------------------------- */
 @media only screen and (max-width: 688px) {
-  * {
-    margin: 0;
+  /* -----------------
+  Base style css 
+  --------------------*/
+  .btn-style {
     box-sizing: content-box;
-    padding: 0;
+    width: 123px;
+    height: 44px;
+    padding: 10px 24px;
+    background-color: #e02c6d;
+    text-decoration: none;
+    color: #ffffff;
   }
+
+  .football_season {
+    text-align: center;
+  }
+
   header {
     background-color: #2d25a0;
-    height: 675px;
-    margin-bottom: 70px;
   }
+
+  /* ---------------
+  navigation section css 
+  -------------------*/
   .navbar {
     display: none;
   }
+
+  /* ---------------
+  banner section css
+  -------------------- */
   .banner__contents {
-    /* display: flex;
-    flex-direction: column;
-    width: 100%;
-    overflow: hidden; */
+    background-color: #2d25a0;
+    display: block;
   }
   .contents {
-    padding: 0;
-    overflow: hidden;
+    margin-right: 50px;
+    padding: 50px 20px 0px;
+    margin-bottom: 30px;
   }
   .contents .tournament_header {
     font-family: "Poppins", sans-serif;
     color: #ffffff;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 26px;
     line-height: 50px;
     margin-bottom: 27px;
   }
 
   .contents a {
     font-family: "Poppins", sans-serif;
+    font-size: 10px;
   }
 
   .arrow_style {
@@ -434,16 +452,265 @@ mobile screen responsive css
   }
 
   .banner_img {
+    padding: 0;
+  }
+
+  .banner_img .first-img-div img {
+    width: 289px;
+    height: 259.17px;
+    object-fit: contain;
+  }
+  .banner_img .second-img-div {
     display: none;
   }
 
+  /*------------------
+   player cards section css 
+   ----------------------*/
   .player__cards {
-    /* padding: 0px 250px; */
+    width: 100%;
     margin: 0;
     padding: 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     row-gap: 27px;
     margin-bottom: 165px;
+  }
+
+  .player_card {
+    width: 330px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+  }
+
+  .player_card .thumbnail img {
+    width: 300px;
+    height: 256px;
+    object-fit: cover;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .player_info .player-name {
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191f;
+    margin-bottom: 10px;
+  }
+
+  .player_info .player--bio {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6c6c6c;
+  }
+
+  /*----------------------
+   Upcoming section css 
+   --------------------*/
+  .upcoming__games {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-bottom: 130px;
+  }
+  .game_cards {
+    width: 330px;
+    padding: 15px 15px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  .game_cards .matches img {
+    width: 300px;
+    height: 200px;
+    border-radius: 25px;
+    object-fit: contain;
+  }
+
+  .game_cards:hover {
+    transform: translateY(-10px);
+    transition-duration: 0.3s;
+  }
+
+  .game_between .team-names {
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .game_between .game-time {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6c6c6c;
+  }
+
+  /* ---------------
+  goat debate css
+  ----------------- */
+
+  .goat__debate {
+    width: 100%;
+    margin: auto;
+    display: block;
+    margin-bottom: 800px;
+    background-color: white;
+  }
+
+  .messi {
+    width: 100%;
+    position: static;
+  }
+
+  .messi img {
+    height: 400px;
+    width: 300px;
+    object-fit: contain;
+    position: static;
+  }
+
+  .ronaldo {
+    width: 100%;
+    position: static;
+  }
+
+  .ronaldo img {
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+    position: static;
+    right: 0px;
+  }
+
+  .stats_card {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    position: static;
+    box-shadow: 0px 0px 40px rgba(58, 33, 33, 0.15);
+    margin-bottom: 15px;
+  }
+
+  .stats_card2 {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    position: static;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  .stats_card h2,
+  .stats_card2 h2 {
+    text-align: center;
+    margin: 10px 0;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .stats_card p,
+  .stats_card2 p {
+    margin-left: 20px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .stats_card:hover,
+  .stats_card2:hover {
+    transform: translateY(-20px);
+    transition: transform 0.5s ease-in;
+  }
+
+  /* ----------
+  Watch live section css
+  ----------------- */
+  .watch__live {
+    width: 100%;
+    margin: auto;
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  .watch_games {
+    width: 50%;
+    padding: 0;
+    margin-left: 50px;
+  }
+
+  .watch_games .live-streaming {
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 27px;
+    margin-top: 100px;
+  }
+
+  .watch_games a {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .arrow_style {
+    margin-left: 8px;
+  }
+
+  .match_img {
+    width: 100%;
+    padding: 0;
+  }
+
+  .match_img img {
+    display: block;
+    margin: auto;
+    width: 328px;
+    height: 248px;
+    margin-top: 29px;
+  }
+
+  /* ---------------
+  footer section css
+  ---------------- */
+
+  .footer_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_section img {
+    width: 300.87px;
+    height: 110px;
+    object-fit: contain;
+    margin-bottom: 40px;
+  }
+
+  .social_media {
+    margin-bottom: 30px;
+  }
+
+  .social_media .icon_sizing {
+    background-color: #e7e7e8;
+    color: #a0a4b2;
+    border-radius: 50%;
+    padding: 0.5em 0.6em;
+    margin-right: 14px;
+  }
+
+  .footer_section p {
+    margin-bottom: 63px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
