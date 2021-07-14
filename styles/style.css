@@ -229,9 +229,11 @@ Upcoming Games css style
 Goat Debate Section
 ------------------------- */
 .goat__debate {
+  width: 80%;
+  margin: auto;
   display: flex;
   height: 70vh;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   background-color: honeydew;
 }
 
@@ -390,3 +392,58 @@ footer section css
 /* -----------------------------
 mobile screen responsive css
 ------------------------------- */
+@media only screen and (max-width: 688px) {
+  * {
+    margin: 0;
+    box-sizing: content-box;
+    padding: 0;
+  }
+  header {
+    background-color: #2d25a0;
+    height: 675px;
+    margin-bottom: 70px;
+  }
+  .navbar {
+    display: none;
+  }
+  .banner__contents {
+    /* display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden; */
+  }
+  .contents {
+    padding: 0;
+    overflow: hidden;
+  }
+  .contents .tournament_header {
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 27px;
+  }
+
+  .contents a {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .arrow_style {
+    margin-left: 8px;
+  }
+
+  .banner_img {
+    display: none;
+  }
+
+  .player__cards {
+    /* padding: 0px 250px; */
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 27px;
+    margin-bottom: 165px;
+  }
+}
